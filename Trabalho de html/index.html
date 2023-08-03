@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/styles.css"/>
+    <!---->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>Página Principal</title>
+</head>
+
+<body>
+    <div id="menu-container">
+        
+        
+        <button class="botao" onclick="window.location.href='./sobrenos.html'"> Sobre Nós </button>
+        <button class="botao" onclick="window.location.href='/produtos.html'"> Produtos </button>
+        <h1> <id="titulo"> Camper's Haven Airsoft </h1>
+        <p>O melhor site de itens para airsoft</p>
+    </div>
+    
+       
+ <!-- Adicionar o swiper slide -->
+ <div class="swiper-container" style="text-align: center;">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img class="imagem-slide" height="380" width="600" 
+                src="https://www.rossi.com.br/media/filer_public/7b/4b/7b4bd1b3-91e3-4b58-94d8-8cee0af7f06a/itm00038633-005.png" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+            <img class="imagem-slide" height="380" width="600"
+                src="https://extremeairsoftri.com/cdn/shop/products/Mp5A5_59089cba-eb56-4676-81c9-692d2d72e870.png?v=1668103298&width=1080"alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+            <img class="imagem-slide" height="380" width="600"
+                src="https://www.rossi.com.br/media/filer_public/7f/72/7f720d4a-af10-4882-b499-5e46da6e47c7/itm00037157-005.png" alt="Slide 3">
+        </div>
+        <div class="swiper-slide">
+            <img class="imagem-slide" height="380" width="600"
+                src="https://assets.basspro.com/image/list/fn_select:jq:first(.%5B%5D%7Cselect(.public_id%20%7C%20endswith(%22main%22)))/2092709.json" alt="Slide 4">
+        </div>
+        <!-- Adicione mais slides conforme necessário -->
+    </div>
+
+    <!-- Navegação e paginação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+<!-- Incluir a biblioteca Swiper.js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+    // Inicializar o swiper slide
+    var swiper = new Swiper('.swiper-container', {
+        // Configurações do swiper
+        // Por exemplo, você pode definir a direção do slide, a velocidade, o modo de paginacão, etc.
+        // Veja a documentação do Swiper.js para mais opções de configuração: https://swiperjs.com/api/
+        loop: true, // Permite que os slides fiquem em loop infinito
+        slidesPerView: 1, // Quantidade de slides visíveis na tela
+        spaceBetween: 20, // Espaçamento entre os slides
+        navigation: {
+            nextEl: '.swiper-button-next', // Elemento para avançar para o próximo slide
+            prevEl: '.swiper-button-prev', // Elemento para voltar ao slide anterior
+        },
+        pagination: {
+            el: '.swiper-pagination', // Elemento para a paginacão dos slides (pontos indicando o número de slides)
+        },
+    });
+</script>
+    
+</body>
+
+</html>
